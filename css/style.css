@@ -1,0 +1,566 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,500;1,800&display=swap');
+
+/*body*/
+.grid-contenedor {
+    font-family: 'Rubik', sans-serif;
+    background-color: aliceblue;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-template-rows: 300px auto 100px ;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+
+/*--header--*/
+
+header {
+    width: 100%;
+    height: 50vh;
+    background-image: url("../img/banner.jpg");
+    background-position:center;
+    background-size: cover;
+    background-attachment:fixed;
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-around;
+    grid-area: header;
+
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    
+}
+
+header nav ul li{
+    margin: 5px 50px 5px 50px;
+    
+}
+
+header a{
+
+        font-weight: bolder;
+        text-decoration:none;
+        color:#006d77;
+        font-size: 20px;
+    
+}
+
+/*--main--*/
+main{
+grid-area: main;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.hero h1 {
+    width: 100%;
+    height: 100px;
+    font-size: 80px;
+    background: #f10006;
+background: linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+background: -webkit-linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+background: -moz-linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+text-shadow: 4px 1px 0px rgba(0,0,0,0.6);
+text-align: center;
+
+}
+.hero h2 {
+    font-size: 40px;
+    font-style:italic;
+    text-decoration: underline;
+    margin: 50px;
+}
+.hero p{
+    font-size: 25px;
+    padding: 30px;
+    margin: 10px;
+}
+
+.hero-video{
+    width: 500px;
+}
+
+/*-- ultimos lanzamientos--*/
+.lanzamientos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.lanzamientos h1 {
+    width: 100%;
+    height: 100px;
+    font-size: 60px;
+    font-style: italic;
+    padding: 20px;
+    background: #f10006;
+background: linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+background: -webkit-linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+background: -moz-linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+text-shadow: 4px 1px 0px rgba(0,0,0,0.6);
+text-align: center;
+
+}
+
+.lanzamientos h2{
+    font-size: 40px;
+    margin: 50px;
+    text-decoration: underline;
+}
+
+.lanzamientos p{
+    font-size: 25px;
+    padding: 30px;
+}
+
+.lanzamientos .lanzamientos-contenedor{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.lanzamientos .lanzamientos-contenedor div:hover{
+    transform: scale(1.1);
+
+}
+
+.lanzamientos .lanzamientos-contenedor div{
+width: 254px;
+height: 420px;
+border: 1px solid black;
+background-color: white;
+margin: 15px;
+transition: 2s;
+
+}
+
+.lanzamientos .lanzamientos-contenedor div img{
+    width: 250px;
+    height: 250px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.lanzamientos .lanzamientos-contenedor div h3{
+    font-size: 30px;
+    margin: 0px;
+    padding: 4px;
+    text-align: center;
+    border: 4px solid black; 
+    border-radius: 10px;
+    
+}
+
+.lanzamientos .lanzamientos-contenedor div p{
+    font-size: 25px;
+    padding: 30px;
+    margin: 0px;
+    text-align: center;
+}
+
+.compras{
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 1fr 1fr ;
+    
+}
+
+
+
+.compras h3{
+    font-size: 30px;
+    padding: 30px;
+    text-decoration: underline;
+
+    
+}
+
+
+.compras .compras-contenedor ul li a{
+    width: 180px;
+    display: list-item;
+    list-style: none;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+font-size: 20px;
+color: black;
+}
+
+
+.futuros-lanzamientos h2{
+    font-size: 40px;
+    margin: 15px;
+    padding: 30px;
+    text-decoration: underline;
+    
+}
+.futuros-lanzamientos p{
+    font-size: 25px;
+    padding: 30px;
+}
+
+/*--deporte--*/
+.deporte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.deporte h1{
+    font-size: 60px;
+    font-style: italic;
+    padding: 20px;
+    background: #f10006;
+background: linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+background: -webkit-linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+background: -moz-linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+text-shadow: 4px 1px 0px rgba(0,0,0,0.6);
+text-align: center;
+}
+.deporte h2{
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+
+.deporte p{
+    font-size: 25px;
+    margin: 40px;
+    padding: 10px;
+}
+
+.deporte .deporte-video {
+    width: 600px;
+    margin: 35px;
+}
+
+.otros-deportistas .deportistas-contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.otros-deportistas .texto p{
+    font-size: 25px;
+    margin: 35px;
+}
+
+.otros-deportistas h3{
+    font-size: 30px;
+    padding: 30px;
+    text-decoration: underline;
+}
+
+
+.otros-deportistas .deportistas-contenedor .lista ul li a{
+    width: 180px;
+    display: list-item;
+    list-style: none;
+    text-align: left;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+font-size: 20px;
+color: black;
+}
+
+/*--musica--*/
+
+.musica{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.musica h1{
+    font-size: 60px;
+    font-style: italic;
+    padding: 20px;
+    background: #f10006;
+background: linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+background: -webkit-linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+background: -moz-linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+text-shadow: 4px 1px 0px rgba(0,0,0,0.6);
+text-align: center;
+}
+.musica p{
+    font-size: 25px;
+    margin: 50px;
+}
+
+.kanye{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.kanye h2{
+    font-size: 40px;
+    margin: 20px;
+}
+.kanye p{
+    font-size: 25px;
+    padding: 30px;
+}
+
+.kanye .kanye-video{
+    margin: 35px;
+    width: 600px;
+}
+
+.yeezy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.yeezy h2{
+    font-size: 40px;
+    margin: 20px;
+    text-decoration: underline;
+}
+.yeezy p{
+    font-size: 25px;
+    margin: 30px;
+    padding: 30px;
+}
+
+.yeezy .yeezy-video{
+    width: 600px;
+}
+
+.otros-musicos .musicos-contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.otros-musicos h3{
+    font-size: 30px;
+    padding: 30px;
+    margin: 0px;
+    text-decoration: underline;
+}
+
+.otros-musicos p{
+    font-size: 25px;
+    padding: 30px;
+    margin: 0px;
+    
+}
+
+.otros-musicos .musicos-lista li {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+
+}
+
+.otros-musicos .musicos-lista ul li a{
+    width: 180px;
+    display: list-item;
+    list-style: none;
+    text-decoration: none;
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+font-size: 20px;
+color: black;
+}
+
+/*--nosotros--*/
+
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros h1{
+    width: 100%;
+    font-size: 60px;
+    font-style: italic;
+    padding: 20px;
+    background: #f10006;
+background: linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+background: -webkit-linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+background: -moz-linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+text-shadow: 4px 1px 0px rgba(0,0,0,0.6);
+text-align: center;
+}
+.nosotros h2{
+    font-size: 50px;
+    margin: 30px;
+    padding: 30px;
+    text-decoration: underline;
+}
+.nosotros p{
+    font-size: 25px;
+    margin: 10px;
+    padding: 30px;
+}
+
+.ustedes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ustedes p{
+    font-size: 25px;
+    padding: 30px;
+}
+
+.ustedes .formulario form{
+    display: flex;
+    flex-direction: column;
+}
+
+.ustedes .formulario{
+    font-size: 25px;
+    margin: 10px;
+    padding: 30px;
+}
+
+
+/*--footer--*/
+footer{
+    grid-area: footer;
+}
+footer img {
+    width: 50px;
+    height: 50px;
+}
+footer a img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/*--media query--*/
+@media screen and (max-width: 880px) {
+    header {
+        justify-content:left
+    }
+    header nav ul li{
+        margin: 5px 10px 5px 10px;
+        
+    }
+    }
+
+    @media screen and (max-width: 570px) {
+        header nav ul {
+            flex-direction: column;
+            
+        }
+        header nav ul{
+            background-color: white;
+        }
+    }
+
+
+
+@media screen and (max-width: 880px) {
+    .header header nav ul {
+        flex-direction: column;
+    
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .hero h1{
+        font-size: 60px;
+    }
+    
+}
+@media screen and (max-width: 470px) {
+    .hero h1{
+        font-size: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 520px){
+    .hero-video{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .lanzamientos h1{
+        font-size: 40px;
+    }
+    
+}
+@media screen and (max-width: 830px) {
+    .compras{
+        display: grid;
+        grid-template-rows: 300px;
+        grid-template-columns: 1fr ;
+        
+    }
+}
+
+@media screen and (max-width: 640px) {
+.deporte .deporte-video{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .deporte h1{
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+.otros-deportistas .deportistas-contenedor{
+    flex-direction: column;
+}
+}
+
+@media screen and (max-width: 630px) {
+    .kanye .kanye-video{
+        width: 70%;
+    }
+    .musica h1{
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .yeezy .yeezy-video{
+        width: 70%;
+    }
+}
