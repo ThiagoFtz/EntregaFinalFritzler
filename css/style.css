@@ -135,7 +135,7 @@ text-align: center;
 #carouselExampleDark{
     width: 300px;
     height: 300px;
-    margin: 30px;
+    margin: 20px;
     padding: 20px;
     background-color: white;
     border: 1.5px solid black;
@@ -178,6 +178,15 @@ text-align: center;
     flex-wrap: wrap;
 
 }
+.lanzamientos-contenedor div:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    padding: 25px;
+
+}
+
+
+
 /*paginas donde comprar*/
 .compras{
     display: grid;
@@ -196,6 +205,17 @@ text-align: center;
     
 }
 
+.compras .argentina:hover{
+    background: rgb(117,173,224);
+background: linear-gradient(0deg, rgba(117,173,224,1) 0%, rgba(255,255,255,1) 59%, rgba(117,173,224,1) 100%);
+
+}
+
+.compras .eeuu:hover{
+    background: rgb(178,34,52);
+background: linear-gradient(180deg, rgba(178,34,52,1) 10%, rgba(255,255,255,1) 17%, rgba(178,34,52,1) 31%, rgba(239,239,239,1) 43%, rgba(178,34,52,1) 55%, rgba(252,252,252,1) 68%, rgba(178,34,52,1) 79%, rgba(249,249,249,1) 88%, rgba(178,34,52,1) 95%);
+
+}
 
 .compras .compras-contenedor ul li a{
     width: 180px;
@@ -407,6 +427,7 @@ font-size: 20px;
 color: black;
 }
 
+
 /*--nosotros--*/
 
 .nosotros{
@@ -579,5 +600,21 @@ footer a img {
 @media screen and (max-width: 630px) {
     .yeezy .yeezy-video{
         width: 70%;
+    }
+}
+
+/*media print */
+@media print{
+    .hero-video{
+        display: none;
+    }
+    .deporte-video{
+        display: none;
+    }
+    .kanye-video{
+        display: none;
+    }
+    .yeezy-video{
+        display: none;
     }
 }
