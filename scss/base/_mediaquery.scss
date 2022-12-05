@@ -1,0 +1,123 @@
+/*--media query--*/
+/*cambios barra de navegacion*/
+@media screen and (max-width: 880px) {
+    header {
+        justify-content:left
+        nav{
+            ul{
+                flex-direction: column;
+                    li{
+                        margin: 5px 10px 5px 10px;
+                }
+            }
+        }
+    }
+}
+
+    @media screen and (max-width: 570px) {
+        header{
+            nav{
+                ul{
+                flex-direction: column;
+                background-color: white;
+            }
+        }
+    }
+    }
+
+/*cambios index hero section*/
+@media screen and (max-width: 610px) {
+    .hero{
+        h1{
+        font-size: 60px;
+        }
+    }
+}
+@media screen and (max-width: 520px){
+    .hero-video{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .hero{ 
+        h1{
+        font-size: 50px;
+        }
+    }
+}
+
+/*cambios ultimos lanzamientos*/
+@media screen and (max-width: 500px) {
+    .lanzamientos{ 
+        h1{
+        font-size: 40px;
+        }
+    }
+}
+@media screen and (max-width: 830px) {
+    .compras{
+        display: grid;
+        grid-template-rows: 300px;
+        grid-template-columns: 1fr ;
+        
+    }
+}
+/*cambios deporte*/
+@media screen and (max-width: 640px) {
+.deporte{ 
+    .deporte-video{
+        width: 70%;
+        }
+    }
+}
+@media screen and (max-width: 590px) {
+    .deporte{ 
+        h1{
+        font-size: 45px;
+    }
+}
+}
+@media screen and (max-width: 590px) {
+.otros-deportistas{
+    .deportistas-contenedor{
+    flex-direction: column;
+}
+}
+}
+/*cambios musica*/
+@media screen and (max-width: 630px) {
+    .kanye{ 
+        .kanye-video{
+        width: 70%;
+    }
+}
+    .musica{
+        h1{
+        font-size: 45px;
+    }
+}
+}
+
+@media screen and (max-width: 630px) {
+    .yeezy{
+        .yeezy-video{
+        width: 70%;
+    }
+}
+}
+/*media print */
+@media print{
+    .hero-video{
+        display: none;
+    }
+    .deporte-video{
+        display: none;
+    }
+    .kanye-video{
+        display: none;
+    }
+    .yeezy-video{
+        display: none;
+    }
+}

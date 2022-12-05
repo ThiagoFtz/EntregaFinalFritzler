@@ -1,0 +1,452 @@
+main{
+    grid-area: main;
+    }
+
+    /*--index--*/
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+
+    h1{
+        width: 100%;
+        height: 100px;
+        font-size: 80px;
+        background: #f10006;
+        background: linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+        background: -webkit-linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+        background: -moz-linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+        text-shadow: 4px 1px 0px rgba(0,0,0,0.6);
+        text-align: center;
+
+    }
+    h2{
+        font-size: 40px;
+        font-style:italic;
+        text-decoration: underline;
+        margin: 50px;
+
+    }
+    p{
+        font-size: 25px;
+        padding: 30px;
+        margin: 10px;
+
+    }
+
+    .hero-video{
+        width: 500px;
+
+    }
+
+}
+
+/*-- ultimos lanzamientos--*/
+.lanzamientos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        h1 {
+            width: 100%;
+            height: 100px;
+            font-size: 60px;
+            font-style: italic;
+            padding: 20px;
+            background: #f10006;
+            background: linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+            background: -webkit-linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+            background: -moz-linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+            text-shadow: 4px 1px 0px rgba(0,0,0,0.6);
+            text-align: center;
+            }
+        h2{
+            font-size: 40px;
+            margin: 50px;
+            text-decoration: underline;
+            }
+
+        p{
+            font-size: 25px;
+            padding: 30px;
+            }
+
+        .lanzamientos-contenedor{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+            flex-wrap: wrap;
+
+            #carouselExampleDark{
+                width: 300px;
+                height: 300px;
+                margin: 20px;
+                padding: 20px;
+                background-color: white;
+                border: 1.5px solid black;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: 1s;
+                    padding: 25px;
+
+                }
+            }
+
+            #carouselExampleDark2{
+                width: 300px;
+                height: 300px;
+                margin: 30px;
+                padding: 20px;
+                background-color: white;
+                border: 1.5px solid black;
+            }
+
+            #carouselExampleDark3{
+                width: 300px;
+                height: 300px;
+                margin: 30px;
+                padding: 20px;
+                background-color:hsl(220deg 9% 94%);
+                border: 1.5px solid black;
+            }
+
+            #carouselExampleDark4{
+                width: 300px;
+                height: 300px;
+                margin: 30px;
+                padding: 20px;
+                background-color: white;
+                border: 1.5px solid black;
+            }
+
+            .carousel-caption-d-none-d-md-block h5{
+                font-size: 18px;
+                text-align:center;
+                text-decoration: solid;
+            }
+
+
+        }            
+
+}
+
+/*paginas donde comprar*/
+.compras{
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 1fr 1fr ;
+
+    .grid-compras1{
+        .argentina{
+            font-size: 30px;
+            padding: 30px;
+            text-decoration: underline;
+            &:hover{
+            background: rgb(117,173,224);
+            background: linear-gradient(0deg, rgba(117,173,224,1) 0%, rgba(255,255,255,1) 59%, rgba(117,173,224,1) 100%);
+            }
+
+        }
+
+        .compras-contenedor1{
+            a{
+                width: 180px;
+                display: list-item;
+                list-style: none;
+                text-decoration: none;
+                margin: 5px;
+                padding: 5px;
+                font-size: 20px;
+                color: black;
+            }
+
+        }
+    }
+
+    .grid-compras2{
+        .eeuu{
+            font-size: 30px;
+            padding: 30px;
+            text-decoration: underline;
+            &:hover{
+                background: rgb(178,34,52);
+                background: linear-gradient(180deg, rgba(178,34,52,1) 10%, rgba(255,255,255,1) 17%, rgba(178,34,52,1) 31%, rgba(239,239,239,1) 43%, rgba(178,34,52,1) 55%, rgba(252,252,252,1) 68%, rgba(178,34,52,1) 79%, rgba(249,249,249,1) 88%, rgba(178,34,52,1) 95%);
+            }
+
+        }
+        .compras-contenedor2{
+            a{
+                width: 180px;
+                display: list-item;
+                list-style: none;
+                text-decoration: none;
+                margin: 5px;
+                padding: 5px;
+                font-size: 20px;
+                color: black;
+            }
+    }
+    
+}
+}
+
+/*lo que se viene*/
+.futuros-lanzaimentos{
+    h2{
+        font-size: 40px;
+        margin: 15px;
+        padding: 80px;
+        text-decoration: underline;
+
+    }
+
+    p{
+        font-size: 25px;
+        padding: 30px;
+
+    }
+}
+
+/*--deporte--*/
+.deporte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: 60px;
+        font-style: italic;
+        padding: 20px;
+        background: #f10006;
+        background: linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+        background: -webkit-linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+        background: -moz-linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+        text-shadow: 4px 1px 0px rgba(0,0,0,0.6);
+        text-align: center;
+    }
+
+    h2{
+        font-size: 40px;
+        text-decoration: underline;
+    }
+    
+    p{
+        font-size: 25px;
+        margin: 40px;
+        padding: 10px;
+    }
+
+    .deporte-video {
+        width: 600px;
+        margin: 35px;
+    }
+
+}
+
+/*seccion otros deportistas*/
+.otros-deportistas{
+    .texto{
+        font-size: 25px;
+        margin: 35px;
+
+    }
+
+    .deportistas-contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+        h3{
+            font-size: 30px;
+            padding: 30px;
+            text-decoration: underline;
+
+        }
+        .lista{
+            a{
+                width: 180px;
+                display: list-item;
+                list-style: none;
+                text-align: left;
+                text-decoration: none;
+                margin: 5px;
+                padding: 5px;
+                font-size: 20px;
+                color: black;
+            }
+
+        }
+
+    }
+
+}
+
+/*--musica--*/
+.musica{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-size: 60px;
+        font-style: italic;
+        padding: 20px;
+        background: #f10006;
+        background: linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+        background: -webkit-linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+        background: -moz-linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+        text-shadow: 4px 1px 0px rgba(0,0,0,0.6);
+        text-align: center;
+
+    }
+
+    p{
+        font-size: 25px;
+        margin: 50px;
+    }
+}
+
+/*seccion kanye west*/
+.kanye{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        font-size: 40px;
+        margin: 20px;
+    }
+
+    p{
+        font-size: 25px;
+        padding: 30px;
+    }
+    .kanye-video{
+        margin: 35px;
+        width: 600px;
+    }
+}
+
+/*seccion yeezy*/
+.yeezy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        font-size: 40px;
+        margin: 20px;
+        text-decoration: underline;
+    }
+
+    p{
+        font-size: 25px;
+        margin: 30px;
+        padding: 30px;
+    }
+
+    .yeezy-video{
+        width: 600px;
+    }
+}
+
+/*otros artistas*/
+.otros.musicos{
+    .musicos-contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3{
+            font-size: 30px;
+            padding: 30px;
+            margin: 0px;
+            text-decoration: underline;
+        }
+
+        p{
+            font-size: 25px;
+            padding: 30px;
+            margin: 0px;
+        }
+
+    }
+
+    .musicos-lista{
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+
+        a{
+            width: 180px;
+            display: list-item;
+            list-style: none;
+            text-decoration: none;
+            text-align: left;
+            margin: 5px;
+            padding: 5px;
+        font-size: 20px;
+        color: black;
+        }
+    }
+}
+
+/*--nosotros--*/
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        width: 100%;
+        font-size: 60px;
+        font-style: italic;
+        padding: 20px;
+        background: #f10006;
+        background: linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+        background: -webkit-linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+        background: -moz-linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
+        text-shadow: 4px 1px 0px rgba(0,0,0,0.6);
+        text-align: center;
+    }
+
+    h2{
+        font-size: 50px;
+        margin: 30px;
+        padding: 30px;
+        text-decoration: underline;
+    }
+
+    p{
+        font-size: 25px;
+        margin: 10px;
+        padding: 30px;
+    }
+}
+
+.ustedes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        font-size: 25px;
+        padding: 30px;
+    }
+
+    .formulario{
+        font-size: 25px;
+        margin: 10px;
+        padding: 30px;
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color:powderblue;
+    }
+
+}
