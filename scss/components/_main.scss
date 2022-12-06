@@ -5,10 +5,7 @@ main{
 
     /*--index--*/
 .hero{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
+    @include flex(flex,column,center,center)
 
     h1{
         width: 100%;
@@ -45,10 +42,7 @@ main{
 
 /*-- ultimos lanzamientos--*/
 .lanzamientos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex,column,center,center)
         h1 {
             width: 100%;
             height: 100px;
@@ -74,9 +68,7 @@ main{
             }
 
         .lanzamientos-contenedor{
-            display: flex;
-            flex-direction: row;
-            justify-content:space-evenly;
+            @include flex(flex,row,space-evenly);
             flex-wrap: wrap;
             
 
@@ -231,10 +223,7 @@ main{
 
 /*--deporte--*/
 .deporte{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex,column,center,center)
     h1{
         font-size: nth($font-size,2);
         font-style: italic;
@@ -274,9 +263,7 @@ main{
     }
 
     .deportistas-contenedor{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+        @include flex(flex,column,space-around,center)
         h3{
             font-size: nth($font-size,4);
             padding: 30px;
@@ -304,11 +291,7 @@ main{
 
 /*--musica--*/
 .musica{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    @include flex(flex,column,center,center)
     h1{
         font-size: nth($font-size,2);
         font-style: italic;
@@ -330,10 +313,7 @@ main{
 
 /*seccion kanye west*/
 .kanye{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex,column,center,center)
 
     h2{
         font-size: nth($font-size,3);
@@ -352,10 +332,7 @@ main{
 
 /*seccion yeezy*/
 .yeezy{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex,column,center,center)
 
     h2{
         font-size: nth($font-size,3);
@@ -378,10 +355,7 @@ main{
 .otros-musicos{
     
     .musicos-contenedor{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex,column,center,center)
 
         h3{
             font-size: nth($font-size,4);
@@ -401,9 +375,7 @@ main{
 
 
     .musicos-lista{
-        display: flex;
-        flex-direction: column;
-        justify-content: right;
+        @include flex(flex,column,right,)
 
         ul{
             li{
@@ -426,10 +398,7 @@ main{
 
 /*--nosotros--*/
 .nosotros{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex,column,center,center)
 
     h1{
         width: 100%;
@@ -459,10 +428,7 @@ main{
 }
 
 .ustedes{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(flex,column,center,center)
 
 
 
@@ -480,8 +446,7 @@ main{
         background-color:powderblue;
 
         form{
-            display: flex;
-            flex-direction: column;
+            @include flex(flex,column,center,)
         }
 
 
