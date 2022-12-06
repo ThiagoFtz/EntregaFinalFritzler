@@ -5,15 +5,12 @@ $font-size:
 30px,
 25px,
 20px,
-18px,
-//mixin
+18px;
+
 
 @mixin flex ($flex, $direction, $justify, $aling) {
     display: $flex;
     flex-direction: $direction;
     justify-content: $justify;
-    align-items: $aling;
-    
+    align-items: $aling;    
 }
-
-@include flex(flex,column,center,)
