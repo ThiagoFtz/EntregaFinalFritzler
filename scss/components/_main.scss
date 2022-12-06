@@ -1,3 +1,4 @@
+@import "../base/variables"
 main{
     grid-area: main;
     }
@@ -12,7 +13,7 @@ main{
     h1{
         width: 100%;
         height: 100px;
-        font-size: 80px;
+        font-size: nth($font-size,1);
         background: #f10006;
         background: linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
         background: -webkit-linear-gradient(180deg,#f10006 1%, #c400ff 50%, #07ecd6 100%);
@@ -22,14 +23,14 @@ main{
 
     }
     h2{
-        font-size: 40px;
+        font-size: nth($font-size,3);
         font-style:italic;
         text-decoration: underline;
         margin: 50px;
 
     }
     p{
-        font-size: 25px;
+        font-size: nth($font-size,5);
         padding: 30px;
         margin: 10px;
 
@@ -51,7 +52,7 @@ main{
         h1 {
             width: 100%;
             height: 100px;
-            font-size: 60px;
+            font-size: nth($font-size,2);
             font-style: italic;
             padding: 20px;
             background: #f10006;
@@ -62,13 +63,13 @@ main{
             text-align: center;
             }
         h2{
-            font-size: 40px;
+            font-size: nth($font-size,3);
             margin: 50px;
             text-decoration: underline;
             }
 
         p{
-            font-size: 25px;
+            font-size: nth($font-size,5);
             padding: 30px;
             }
 
@@ -141,7 +142,7 @@ main{
             }
 
             .carousel-caption-d-none-d-md-block h5{
-                font-size: 18px;
+                font-size: nth($font-size,7);
                 text-align:center;
                 text-decoration: solid;
             }
@@ -159,7 +160,7 @@ main{
 
     .grid-compras1{
         .argentina{
-            font-size: 30px;
+            font-size: nth($font-size,4);
             padding: 30px;
             text-decoration: underline;
             &:hover{
@@ -177,7 +178,7 @@ main{
                 text-decoration: none;
                 margin: 5px;
                 padding: 5px;
-                font-size: 20px;
+                font-size: nth($font-size,6);
                 color: black;
             }
 
@@ -186,7 +187,7 @@ main{
 
     .grid-compras2{
         .eeuu{
-            font-size: 30px;
+            font-size: nth($font-size,4);
             padding: 30px;
             text-decoration: underline;
             &:hover{
@@ -203,7 +204,7 @@ main{
                 text-decoration: none;
                 margin: 5px;
                 padding: 5px;
-                font-size: 20px;
+                font-size: nth($font-size,6);
                 color: black;
             }
     }
@@ -215,7 +216,7 @@ main{
 .futuros-lanzamientos{
 
     h2{
-    font-size: 40px;
+        font-size: nth($font-size,3);
     margin: 15px;
     padding: 80px;
     text-decoration: underline;
@@ -223,7 +224,7 @@ main{
     
 
     p{
-    font-size: 25px;
+        font-size: nth($font-size,5);
     padding: 30px;
 }
 }
@@ -235,7 +236,7 @@ main{
     justify-content: center;
     align-items: center;
     h1{
-        font-size: 60px;
+        font-size: nth($font-size,2);
         font-style: italic;
         padding: 20px;
         background: #f10006;
@@ -247,12 +248,12 @@ main{
     }
 
     h2{
-        font-size: 40px;
+        font-size: nth($font-size,3);
         text-decoration: underline;
     }
     
     p{
-        font-size: 25px;
+        font-size: nth($font-size,5);
         margin: 40px;
         padding: 10px;
     }
@@ -267,7 +268,7 @@ main{
 /*seccion otros deportistas*/
 .otros-deportistas{
     .texto{
-        font-size: 25px;
+        font-size: nth($font-size,5);
         margin: 35px;
 
     }
@@ -277,7 +278,7 @@ main{
     justify-content: space-around;
     align-items: center;
         h3{
-            font-size: 30px;
+            font-size: nth($font-size,4);
             padding: 30px;
             text-decoration: underline;
 
@@ -291,7 +292,7 @@ main{
                 text-decoration: none;
                 margin: 5px;
                 padding: 5px;
-                font-size: 20px;
+                font-size: nth($font-size,6);
                 color: black;
             }
 
@@ -309,7 +310,7 @@ main{
     align-items: center;
 
     h1{
-        font-size: 60px;
+        font-size: nth($font-size,2);
         font-style: italic;
         padding: 20px;
         background: #f10006;
@@ -322,7 +323,7 @@ main{
     }
 
     p{
-        font-size: 25px;
+        font-size: nth($font-size,5);
         margin: 50px;
     }
 }
@@ -335,12 +336,12 @@ main{
     align-items: center;
 
     h2{
-        font-size: 40px;
+        font-size: nth($font-size,3);
         margin: 20px;
     }
 
     p{
-        font-size: 25px;
+        font-size: nth($font-size,5);
         padding: 30px;
     }
     .kanye-video{
@@ -357,13 +358,13 @@ main{
     align-items: center;
 
     h2{
-        font-size: 40px;
+        font-size: nth($font-size,3);
         margin: 20px;
         text-decoration: underline;
     }
 
     p{
-        font-size: 25px;
+        font-size: nth($font-size,5);
         margin: 30px;
         padding: 30px;
     }
@@ -383,14 +384,14 @@ main{
         align-items: center;
 
         h3{
-            font-size: 30px;
+            font-size: nth($font-size,4);
             padding: 30px;
             margin: 0px;
             text-decoration: underline;
         }
     
         p{
-            font-size: 25px;
+            font-size: nth($font-size,5);
             padding: 30px;
             margin: 0px;
         }
@@ -415,7 +416,7 @@ main{
             text-align: left;
             margin: 5px;
             padding: 5px;
-        font-size: 20px;
+            font-size: nth($font-size,6);
         color: black;
                 }
             }
@@ -432,7 +433,7 @@ main{
 
     h1{
         width: 100%;
-        font-size: 60px;
+        font-size: nth($font-size,2);
         font-style: italic;
         padding: 20px;
         background: #f10006;
@@ -444,14 +445,14 @@ main{
     }
 
     h2{
-        font-size: 50px;
+        font-size: nth($font-size,2);
         margin: 30px;
         padding: 30px;
         text-decoration: underline;
     }
 
     p{
-        font-size: 25px;
+        font-size: nth($font-size,5);
         margin: 10px;
         padding: 30px;
     }
@@ -466,12 +467,12 @@ main{
 
 
     p{
-        font-size: 25px;
+        font-size: nth($font-size,5);
         padding: 30px;
     }
 
     .formulario{
-        font-size: 25px;
+        font-size: nth($font-size,5);
         margin: 10px;
         padding: 30px;
         border: 2px solid black;
