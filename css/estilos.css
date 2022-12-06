@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,500;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%; }
+
+.grid-contenedor {
+  font-family: 'Rubik', sans-serif;
+  background-color: aliceblue;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 300px auto 100px;
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+
+header {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../img/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  grid-area: header; }
+  header nav ul {
+    list-style: none;
+    display: flex; }
+    header nav ul li {
+      margin: 5px 50px 5px 50px; }
+      header nav ul li a {
+        font-weight: bolder;
+        text-decoration: none;
+        color: #006d77;
+        font-size: 20px; }
+
+main {
+  grid-area: main; }
+
+/*--index--*/
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .hero h1 {
+    width: 100%;
+    height: 100px;
+    font-size: 80px;
+    background: #f10006;
+    background: linear-gradient(180deg, #f10006 1%, #c400ff 50%, #07ecd6 100%);
+    background: -webkit-linear-gradient(180deg, #f10006 1%, #c400ff 50%, #07ecd6 100%);
+    background: -moz-linear-gradient(180deg, #f10006 1%, #c400ff 50%, #07ecd6 100%);
+    text-shadow: 4px 1px 0px rgba(0, 0, 0, 0.6);
+    text-align: center; }
+  .hero h2 {
+    font-size: 40px;
+    font-style: italic;
+    text-decoration: underline;
+    margin: 50px; }
+  .hero p {
+    font-size: 25px;
+    padding: 30px;
+    margin: 10px; }
+  .hero .hero-video {
+    width: 500px; }
+
+/*-- ultimos lanzamientos--*/
+.lanzamientos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .lanzamientos h1 {
+    width: 100%;
+    height: 100px;
+    font-size: 60px;
+    font-style: italic;
+    padding: 20px;
+    background: #f10006;
+    background: linear-gradient(180deg, #f10006 1%, #c400ff 50%, #07ecd6 100%);
+    background: -webkit-linear-gradient(180deg, #f10006 1%, #c400ff 50%, #07ecd6 100%);
+    background: -moz-linear-gradient(180deg, #f10006 1%, #c400ff 50%, #07ecd6 100%);
+    text-shadow: 4px 1px 0px rgba(0, 0, 0, 0.6);
+    text-align: center; }
+  .lanzamientos h2 {
+    font-size: 40px;
+    margin: 50px;
+    text-decoration: underline; }
+  .lanzamientos p {
+    font-size: 25px;
+    padding: 30px; }
+  .lanzamientos .lanzamientos-contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+    .lanzamientos .lanzamientos-contenedor #carouselExampleDark {
+      width: 300px;
+      height: 300px;
+      margin: 20px;
+      padding: 20px;
+      background-color: white;
+      border: 1.5px solid black; }
+      .lanzamientos .lanzamientos-contenedor #carouselExampleDark:hover {
+        transform: scale(1.1);
+        transition: 1s;
+        padding: 25px; }
+    .lanzamientos .lanzamientos-contenedor #carouselExampleDark2 {
+      width: 300px;
+      height: 300px;
+      margin: 30px;
+      padding: 20px;
+      background-color: white;
+      border: 1.5px solid black; }
+    .lanzamientos .lanzamientos-contenedor #carouselExampleDark3 {
+      width: 300px;
+      height: 300px;
+      margin: 30px;
+      padding: 20px;
+      background-color: #eeeff1;
+      border: 1.5px solid black; }
+    .lanzamientos .lanzamientos-contenedor #carouselExampleDark4 {
+      width: 300px;
+      height: 300px;
+      margin: 30px;
+      padding: 20px;
+      background-color: white;
+      border: 1.5px solid black; }
+    .lanzamientos .lanzamientos-contenedor .carousel-caption-d-none-d-md-block h5 {
+      font-size: 18px;
+      text-align: center;
+      text-decoration: solid; }
+
+/*paginas donde comprar*/
+.compras {
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 1fr 1fr; }
+  .compras .grid-compras1 .argentina {
+    font-size: 30px;
+    padding: 30px;
+    text-decoration: underline; }
+    .compras .grid-compras1 .argentina:hover {
+      background: #75ade0;
+      background: linear-gradient(0deg, #75ade0 0%, white 59%, #75ade0 100%); }
+  .compras .grid-compras1 .compras-contenedor1 a {
+    width: 180px;
+    display: list-item;
+    list-style: none;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    color: black; }
+  .compras .grid-compras2 .eeuu {
+    font-size: 30px;
+    padding: 30px;
+    text-decoration: underline; }
+    .compras .grid-compras2 .eeuu:hover {
+      background: #b22234;
+      background: linear-gradient(180deg, #b22234 10%, white 17%, #b22234 31%, #efefef 43%, #b22234 55%, #fcfcfc 68%, #b22234 79%, #f9f9f9 88%, #b22234 95%); }
+  .compras .grid-compras2 .compras-contenedor2 a {
+    width: 180px;
+    display: list-item;
+    list-style: none;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    color: black; }
+
+/*lo que se viene*/
+.futuros-lanzamientos h2 {
+  font-size: 40px;
+  margin: 15px;
+  padding: 80px;
+  text-decoration: underline; }
+
+.futuros-lanzamientos p {
+  font-size: 25px;
+  padding: 30px; }
+
+/*--deporte--*/
+.deporte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .deporte h1 {
+    font-size: 60px;
+    font-style: italic;
+    padding: 20px;
+    background: #f10006;
+    background: linear-gradient(180deg, #f10006 1%, #c400ff 50%, #07ecd6 100%);
+    background: -webkit-linear-gradient(180deg, #f10006 1%, #c400ff 50%, #07ecd6 100%);
+    background: -moz-linear-gradient(180deg, #f10006 1%, #c400ff 50%, #07ecd6 100%);
+    text-shadow: 4px 1px 0px rgba(0, 0, 0, 0.6);
+    text-align: center; }
+  .deporte h2 {
+    font-size: 40px;
+    text-decoration: underline; }
+  .deporte p {
+    font-size: 25px;
+    margin: 40px;
+    padding: 10px; }
+  .deporte .deporte-video {
+    width: 600px;
+    margin: 35px; }
+
+/*seccion otros deportistas*/
+.otros-deportistas .texto {
+  font-size: 25px;
+  margin: 35px; }
+
+.otros-deportistas .deportistas-contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .otros-deportistas .deportistas-contenedor h3 {
+    font-size: 30px;
+    padding: 30px;
+    text-decoration: underline; }
+  .otros-deportistas .deportistas-contenedor .lista a {
+    width: 180px;
+    display: list-item;
+    list-style: none;
+    text-align: left;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    color: black; }
+
+/*--musica--*/
+.musica {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .musica h1 {
+    font-size: 60px;
+    font-style: italic;
+    padding: 20px;
+    background: #f10006;
+    background: linear-gradient(180deg, #f10006 1%, #c400ff 50%, #07ecd6 100%);
+    background: -webkit-linear-gradient(180deg, #f10006 1%, #c400ff 50%, #07ecd6 100%);
+    background: -moz-linear-gradient(180deg, #f10006 1%, #c400ff 50%, #07ecd6 100%);
+    text-shadow: 4px 1px 0px rgba(0, 0, 0, 0.6);
+    text-align: center; }
+  .musica p {
+    font-size: 25px;
+    margin: 50px; }
+
+/*seccion kanye west*/
+.kanye {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .kanye h2 {
+    font-size: 40px;
+    margin: 20px; }
+  .kanye p {
+    font-size: 25px;
+    padding: 30px; }
+  .kanye .kanye-video {
+    margin: 35px;
+    width: 600px; }
+
+/*seccion yeezy*/
+.yeezy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .yeezy h2 {
+    font-size: 40px;
+    margin: 20px;
+    text-decoration: underline; }
+  .yeezy p {
+    font-size: 25px;
+    margin: 30px;
+    padding: 30px; }
+  .yeezy .yeezy-video {
+    width: 600px; }
+
+/*otros artistas*/
+.otros-musicos .musicos-contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .otros-musicos .musicos-contenedor h3 {
+    font-size: 30px;
+    padding: 30px;
+    margin: 0px;
+    text-decoration: underline; }
+  .otros-musicos .musicos-contenedor p {
+    font-size: 25px;
+    padding: 30px;
+    margin: 0px; }
+
+.otros-musicos .musicos-lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: right; }
+  .otros-musicos .musicos-lista ul li a {
+    width: 180px;
+    display: list-item;
+    list-style: none;
+    text-decoration: none;
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    color: black; }
+
+/*--nosotros--*/
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .nosotros h1 {
+    width: 100%;
+    font-size: 60px;
+    font-style: italic;
+    padding: 20px;
+    background: #f10006;
+    background: linear-gradient(180deg, #f10006 1%, #c400ff 50%, #07ecd6 100%);
+    background: -webkit-linear-gradient(180deg, #f10006 1%, #c400ff 50%, #07ecd6 100%);
+    background: -moz-linear-gradient(180deg, #f10006 1%, #c400ff 50%, #07ecd6 100%);
+    text-shadow: 4px 1px 0px rgba(0, 0, 0, 0.6);
+    text-align: center; }
+  .nosotros h2 {
+    font-size: 50px;
+    margin: 30px;
+    padding: 30px;
+    text-decoration: underline; }
+  .nosotros p {
+    font-size: 25px;
+    margin: 10px;
+    padding: 30px; }
+
+.ustedes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .ustedes p {
+    font-size: 25px;
+    padding: 30px; }
+  .ustedes .formulario {
+    font-size: 25px;
+    margin: 10px;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: powderblue; }
+    .ustedes .formulario form {
+      display: flex;
+      flex-direction: column; }
+
+footer {
+  grid-area: footer; }
+  footer img {
+    width: 50px;
+    height: 50px; }
+
+/*--media query--*/
+/*cambios barra de navegacion*/
+@media screen and (max-width: 880px) {
+  header {
+    justify-content: left; }
+  header nav ul li {
+    margin: 5px 10px 5px 10px; } }
+
+@media screen and (max-width: 570px) {
+  header nav ul {
+    flex-direction: column; }
+  header nav ul {
+    background-color: white; } }
+
+@media screen and (max-width: 880px) {
+  .header header nav ul {
+    flex-direction: column; } }
+
+/*cambios index hero section*/
+@media screen and (max-width: 610px) {
+  .hero h1 {
+    font-size: 60px; } }
+
+@media screen and (max-width: 470px) {
+  .hero h1 {
+    font-size: 50px; } }
+
+@media screen and (max-width: 520px) {
+  .hero-video {
+    width: 70%; } }
+
+/*cambios ultimos lanzamientos*/
+@media screen and (max-width: 500px) {
+  .lanzamientos h1 {
+    font-size: 40px; } }
+
+@media screen and (max-width: 830px) {
+  .compras {
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 1fr; } }
+
+/*cambios deporte*/
+@media screen and (max-width: 640px) {
+  .deporte .deporte-video {
+    width: 70%; } }
+
+@media screen and (max-width: 590px) {
+  .deporte h1 {
+    font-size: 45px; } }
+
+@media screen and (max-width: 590px) {
+  .otros-deportistas .deportistas-contenedor {
+    flex-direction: column; } }
+
+/*cambios musica*/
+@media screen and (max-width: 630px) {
+  .kanye .kanye-video {
+    width: 70%; }
+  .musica h1 {
+    font-size: 45px; } }
+
+@media screen and (max-width: 630px) {
+  .yeezy .yeezy-video {
+    width: 70%; } }
+
+/*media print */
+@media print {
+  .hero-video {
+    display: none; }
+  .deporte-video {
+    display: none; }
+  .kanye-video {
+    display: none; }
+  .yeezy-video {
+    display: none; } }

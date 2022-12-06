@@ -107,7 +107,7 @@ main{
                 height: 300px;
                 margin: 30px;
                 padding: 20px;
-                background-color:hsl(220deg 9% 94%);
+                background-color:hsl(220deg, 9%, 94%);
                 border: 1.5px solid black;
             }
 
@@ -192,20 +192,20 @@ main{
 }
 
 /*lo que se viene*/
-.futuros-lanzaimentos{
-    h2{
-        font-size: 40px;
-        margin: 15px;
-        padding: 80px;
-        text-decoration: underline;
+.futuros-lanzamientos{
 
+    h2{
+    font-size: 40px;
+    margin: 15px;
+    padding: 80px;
+    text-decoration: underline;
     }
+    
 
     p{
-        font-size: 25px;
-        padding: 30px;
-
-    }
+    font-size: 25px;
+    padding: 30px;
+}
 }
 
 /*--deporte--*/
@@ -354,7 +354,8 @@ main{
 }
 
 /*otros artistas*/
-.otros.musicos{
+.otros-musicos{
+    
     .musicos-contenedor{
         display: flex;
         flex-direction: column;
@@ -367,21 +368,26 @@ main{
             margin: 0px;
             text-decoration: underline;
         }
-
+    
         p{
             font-size: 25px;
             padding: 30px;
             margin: 0px;
         }
-
+    
     }
+
+
 
     .musicos-lista{
         display: flex;
         flex-direction: column;
         justify-content: right;
 
-        a{
+        ul{
+            li{
+
+                a{
             width: 180px;
             display: list-item;
             list-style: none;
@@ -391,6 +397,8 @@ main{
             padding: 5px;
         font-size: 20px;
         color: black;
+                }
+            }
         }
     }
 }
@@ -435,6 +443,8 @@ main{
     justify-content: center;
     align-items: center;
 
+
+
     p{
         font-size: 25px;
         padding: 30px;
@@ -447,6 +457,14 @@ main{
         border: 2px solid black;
         border-radius: 5px;
         background-color:powderblue;
+
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+
+
     }
+
 
 }
