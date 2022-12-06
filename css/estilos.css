@@ -75,7 +75,6 @@ main {
   align-items: center; }
   .lanzamientos h1 {
     width: 100%;
-    height: 100px;
     font-size: 60px;
     font-style: italic;
     padding: 20px;
@@ -203,6 +202,7 @@ main {
   justify-content: center;
   align-items: center; }
   .deporte h1 {
+    width: 100%;
     font-size: 60px;
     font-style: italic;
     padding: 20px;
@@ -230,7 +230,7 @@ main {
 
 .otros-deportistas .deportistas-contenedor {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center; }
   .otros-deportistas .deportistas-contenedor h3 {
@@ -255,6 +255,7 @@ main {
   justify-content: center;
   align-items: center; }
   .musica h1 {
+    width: 100%;
     font-size: 60px;
     font-style: italic;
     padding: 20px;
